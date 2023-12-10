@@ -1,3 +1,4 @@
+// input checkbox
 document.ready(function () {
 	const amenities = {};
 	$("li input[type=checkbox]").change(function () {
@@ -9,7 +10,7 @@ document.ready(function () {
 		$(".amenities h4").text(Object.keys(amenities).sort().join(", "));
 	});
 
-	//Status of Api
+	//Status of Api, Request API in the port 5001
 	$.getJSON("http://0.0.0.0:5001/api/v1/status/", (data) => {
 		if (data.status === "OK") {
 			$("div#api_status").addClass("available");
