@@ -1,3 +1,4 @@
+// Input checkbox
 document.ready(function () {
 	const amenities = {};
 	$("li input[type=checkbox]").change(function () {
