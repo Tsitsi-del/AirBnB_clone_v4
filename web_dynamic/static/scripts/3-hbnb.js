@@ -19,7 +19,7 @@ document.ready(function () {
 	});
 });
 
-//Fetching places data
+//Fetching places data through API request
 $.post({
 		url: `${HOST}/api/v1/places_search`,
 		data: JSON.stringify({}),
