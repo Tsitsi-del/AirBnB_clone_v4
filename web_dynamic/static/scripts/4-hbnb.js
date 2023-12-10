@@ -55,7 +55,7 @@ $.post({
 		dataType: "json",
 	});
 	
-	//Searching places
+	//Searching places when btn clicked
 	$(".filters button").bind("click", searchPlace);
 	searchPlace();
 });
